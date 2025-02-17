@@ -28,7 +28,7 @@ app.post("/api/user", (_req, res) => {
 
 app.get("/api/search", (req, res) => {
   const q = req.query.q;
-  const url = `items?&limit=10&include_missing_integration=false&q=${q}`;
+  const url = `employer-search?&limit=8&q=${q}`;
 
   axios
     .get(url)
